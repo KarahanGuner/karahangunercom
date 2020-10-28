@@ -1,0 +1,13 @@
+.card {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: black;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: flex-end;
+}
