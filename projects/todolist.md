@@ -9,9 +9,9 @@ date: "25.10.2020"
 
 ToDoList is a single page, progressive web application that allows you to share a list with your friends and family and use it together. You can add it to your homescreen on your phone or your PC by the click of a button. 
 
-It is hosted on heroku: <a href="https://todolistbykarahan.herokuapp.com/" target="_blank">https://todolistbykarahan.herokuapp.com</a>
+It is hosted on heroku: <a href="https://todolistbykarahan.herokuapp.com/" target="_blank" rel="noopener noreferrer">https://todolistbykarahan.herokuapp.com</a>
 
-Github Repo:<a href="https://github.com/KarahanGuner/ToDoList" target="_blank">https://github.com/KarahanGuner/ToDoList</a> 
+Github Repo:<a href="https://github.com/KarahanGuner/ToDoList" target="_blank" rel="noopener noreferrer">https://github.com/KarahanGuner/ToDoList</a> 
 
 <br/>
 
@@ -31,7 +31,7 @@ If I didn't want to try the toolkit I probably would have gone with Context API.
 
 ### Search Engine Optimization (SEO) Problems
 
-Client-Side Rendering has SEO problems. Because the initial file you send to the user is just the shell of what is to be created, search engines do not recognize it as a valid result. One way to combat this, is to ditch the client-side rendering and use server-side rendering. By going with this approach you lose the advantages provided by CSR, your server will have to work more because its pre-rendering each page for each user and also you lose the app like experience. Luckily, there is another way, "dynamic rendering". Basically, when a search engine bot tries to access a page, the website sends over a fully-rendered page; when a human tries to access a page, their browser has to render the page. More can be read here: <a href="https://www.botify.com/blog/client-side-server-side-rendering-seo" target="_blank">https://www.botify.com/blog/client-side-server-side-rendering-seo</a>
+Client-Side Rendering has SEO problems. Because the initial file you send to the user is just the shell of what is to be created, search engines do not recognize it as a valid result. One way to combat this, is to ditch the client-side rendering and use server-side rendering. By going with this approach you lose the advantages provided by CSR, your server will have to work more because its pre-rendering each page for each user and also you lose the app like experience. Luckily, there is another way, "dynamic rendering". Basically, when a search engine bot tries to access a page, the website sends over a fully-rendered page; when a human tries to access a page, their browser has to render the page. More can be read here: <a href="https://www.botify.com/blog/client-side-server-side-rendering-seo" target="_blank" rel="noopener noreferrer">https://www.botify.com/blog/client-side-server-side-rendering-seo</a>
 
 <br/>
 

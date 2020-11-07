@@ -28,8 +28,8 @@ export default function Home() {
             </div>
             <br></br>
             <div className={styles.links}>You can contact me through:    
-              <a target="_blank" href="https://github.com/KarahanGuner">   <img src="./icons/githubdark.png" alt="github"/> GitHub </a>
-              <a target="_blank" href="https://www.linkedin.com/in/karahan-g%C3%BCner-9b4b221a0/"><img src="./icons/linkedin.png" alt="linkedin"/> LinkedIn</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/KarahanGuner">   <img src="./icons/githubdark.png" alt="github"/> GitHub </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/karahan-g%C3%BCner-9b4b221a0/"><img src="./icons/linkedin.png" alt="linkedin"/> LinkedIn</a>
             </div>
             <div className={styles.links}>My Email: kkarahanguner@gmail.com</div>
           </Col>

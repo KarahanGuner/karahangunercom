@@ -7,9 +7,9 @@ date: "26.10.2020"
 
 ###  Complete React Developer by Andrei Neagoie and Yihua Zhang - Review
 
-Complete React Developer is an <a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/" target="_blank">Udemy course</a> from Andrei Neagoie and Yihua Zhang. It teaches React, Redux, Hooks and GraphQL. This blog post is going to be about my experience with it.
+Complete React Developer is an <a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/" target="_blank" rel="noopener noreferrer">Udemy course</a> from Andrei Neagoie and Yihua Zhang. It teaches React, Redux, Hooks and GraphQL. This blog post is going to be about my experience with it.
 
-I chose to buy Andrei and Yihua's course because I had been wanting to learn React for a while and their course also included Redux and Hooks. Most of the course is taught by Yihua, Andrei only comes to explain some concepts. It is around 40 hours. Throughout the course you work on one big project, it is an e-commerce website and you deploy it to Heroku. My version can be seen <a href="https://crwn-kara.herokuapp.com/" target="_blank">here</a>.
+I chose to buy Andrei and Yihua's course because I had been wanting to learn React for a while and their course also included Redux and Hooks. Most of the course is taught by Yihua, Andrei only comes to explain some concepts. It is around 40 hours. Throughout the course you work on one big project, it is an e-commerce website and you deploy it to Heroku. My version can be seen <a href="https://crwn-kara.herokuapp.com/" target="_blank" rel="noopener noreferrer">here</a>.
 
 This not an easy course to understand and you'll have to rewatch some parts again and again. Especially the learning Redux from this course was quite hard. This is not entirely their fault, Redux without the toolkit is not easy to understand but I think they should have updated the course with the toolkit. You're going to have to have documentation open in a new tab while going through this course.
 
