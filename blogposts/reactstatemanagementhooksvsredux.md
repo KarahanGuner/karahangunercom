@@ -2,7 +2,7 @@
 title: React state management | Hooks vs Redux
 description: "React state management: React Hooks vs Redux"
 firsttwohundredchars: "Before adding Redux to a project, one must ask themselves, do I really need a global state? If I do, does it have to be by Redux? With the addition of Hooks, functional components can have states too..."
-date: "27.10.2020"
+date: "2020.10.27"
 ---
 
 ## React state management: Hooks vs Redux

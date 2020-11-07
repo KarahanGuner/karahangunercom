@@ -2,7 +2,7 @@
 title: ToDoList
 description: "A Single Page List App"
 firsttwohundredchars: "ToDoList is a single page, progressive web application that allows you to share a list with your friends and family and use it together..."
-date: "25.10.2020"
+date: "2020.10.25"
 ---
 
 ### Description

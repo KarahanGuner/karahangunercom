@@ -37,16 +37,15 @@ const BlogPage = ({titles, firsttwohundredchars, fileNames}) => {
 };
 
 export const getStaticProps = async () => { 
-    var files = fs.readdirSync('blogposts');//gets the file names in the folder
-    //sort it chronologically. push the last file that has been created to end of array
-    files.sort(function(a, b) {
-        return fs.statSync('./blogposts/' + a).birthtime.getTime() - 
-               fs.statSync('./blogposts/' + b).birthtime.getTime();
-    });
-    files = files.reverse(); //flip the array
+    const files = fs.readdirSync('blogposts');//gets the file names in the folder
     const fileNames = files.map(file => file.replace('.md', ''));
     const markdownWithMetadata = files.map(file => fs.readFileSync(path.join('blogposts', file), 'utf8'));
-    const parsedMarkdown = markdownWithMetadata.map(data => matter(data));
+    var parsedMarkdown = markdownWithMetadata.map(data => matter(data));
+    //sort based on date
+    parsedMarkdown.sort(function(a,b) {
+        return Date.parse(a.data.date) - Date.parse(b.data.date)
+    });
+    parsedMarkdown = parsedMarkdown.reverse(); //flip the array
     const titles = parsedMarkdown.map(parsed => parsed.data.title);
     const firsttwohundredchars = parsedMarkdown.map(parsed => parsed.data.firsttwohundredchars);
     return {
