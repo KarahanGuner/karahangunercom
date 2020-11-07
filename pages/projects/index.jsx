@@ -11,7 +11,7 @@ import Container from 'react-bootstrap/Container';
 import MyNavbar from '../../components/mynavbar.component';
 import styles from '../../styles/Projects.module.css';
 
-const ProjectsPage = ({titles, firsttwohundredchars, fileNames}) => {
+const ProjectsPage = ({titles, firsttwohundredchars, paths}) => {
     return (
         <div>
             <Head>
@@ -27,7 +27,7 @@ const ProjectsPage = ({titles, firsttwohundredchars, fileNames}) => {
                             <Card.Text >
                                 {firsttwohundredchars[i]}
                             </Card.Text>
-                            <div className={styles.buttoncontainer}><Button variant="dark" href={`/projects/${fileNames[i]}`} className={styles.button}>Read more</Button></div>
+                            <div className={styles.buttoncontainer}><Button variant="dark" href={`/projects/${paths[i]}`} className={styles.button}>Read more</Button></div>
                         </Card.Body>
                     </Card>
                 ))}
@@ -48,11 +48,12 @@ export const getStaticProps = async () => {
     parsedMarkdown = parsedMarkdown.reverse(); //flip the array
     const titles = parsedMarkdown.map(parsed => parsed.data.title);
     const firsttwohundredchars = parsedMarkdown.map(parsed => parsed.data.firsttwohundredchars);
+    const paths = parsedMarkdown.map(parsed => parsed.data.path);
     return {
         props: {
             titles,
             firsttwohundredchars,
-            fileNames
+            paths
         }
     }
 }

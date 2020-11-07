@@ -11,7 +11,7 @@ import Container from 'react-bootstrap/Container';
 import MyNavbar from '../../components/mynavbar.component';
 import styles from '../../styles/Blog.module.css';
 
-const BlogPage = ({titles, firsttwohundredchars, fileNames}) => {
+const BlogPage = ({titles, firsttwohundredchars, paths}) => {
     return (
         <div>
             <Head>
@@ -27,7 +27,7 @@ const BlogPage = ({titles, firsttwohundredchars, fileNames}) => {
                             <Card.Text >
                                 {firsttwohundredchars[i]}
                             </Card.Text>
-                            <div className={styles.buttoncontainer}><Button variant="dark" href={`/blog/${fileNames[i]}`} className={styles.button}>Read more</Button></div>
+                            <div className={styles.buttoncontainer}><Button variant="dark" href={`/blog/${paths[i]}`} className={styles.button}>Read more</Button></div>
                         </Card.Body>
                     </Card>
                 ))}
@@ -38,7 +38,6 @@ const BlogPage = ({titles, firsttwohundredchars, fileNames}) => {
 
 export const getStaticProps = async () => { 
     const files = fs.readdirSync('blogposts');//gets the file names in the folder
-    const fileNames = files.map(file => file.replace('.md', ''));
     const markdownWithMetadata = files.map(file => fs.readFileSync(path.join('blogposts', file), 'utf8'));
     var parsedMarkdown = markdownWithMetadata.map(data => matter(data));
     //sort based on date
@@ -46,13 +45,15 @@ export const getStaticProps = async () => {
         return Date.parse(a.data.date) - Date.parse(b.data.date)
     });
     parsedMarkdown = parsedMarkdown.reverse(); //flip the array
+    console.log(parsedMarkdown[0].data);
     const titles = parsedMarkdown.map(parsed => parsed.data.title);
     const firsttwohundredchars = parsedMarkdown.map(parsed => parsed.data.firsttwohundredchars);
+    const paths = parsedMarkdown.map(parsed => parsed.data.path);
     return {
         props: {
             titles,
             firsttwohundredchars,
-            fileNames
+            paths
         }
     }
 }

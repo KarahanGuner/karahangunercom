@@ -3,6 +3,7 @@ title: This Website
 description: "Technologies Used For Creating This Website"
 firsttwohundredchars: "I was looking for a simple framework to create Static Websites using React when I came across Ben Awad's video on Static Site Generation(SSG) using Next.js. Before that I thought Next.js was only used..."
 date: "2020.10.24"
+path: "thiswebsite"
 ---
 
 ### Technologies Used

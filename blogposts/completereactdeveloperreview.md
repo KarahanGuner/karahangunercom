@@ -3,6 +3,7 @@ title: Complete React Developer by Andrei Neagoie and Yihua Zhang - Review
 description: "My review of the complete react developer course by Andrei Neagoie and Yihua Zhang"
 firsttwohundredchars: "Complete React Developer is an Udemy course from Andrei Neagoie and Yihua Zhang. It teaches React, Redux, Hooks and GraphQL. This blog post is going to be about my experience with it. I chose to buy..."
 date: "2020.10.26"
+path: "completereactdeveloperreview"
 ---
 
 ###  Complete React Developer by Andrei Neagoie and Yihua Zhang - Review

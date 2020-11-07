@@ -3,6 +3,7 @@ title: The Web Development Bootcamp by Colt Steele - Review
 description: "My review of the web development bootcamp by Colt Steele"
 firsttwohundredchars: "It has been a while since I have taken Colt Steele's The Web Development Bootcamp on Udemy. It was the first web development course I took and at the time I did not know HTML, CSS or anything about ba..."
 date: "2020.10.25"
+path: "thewebdevelopmentbootcampreview"
 ---
 
 ### The Web Development Bootcamp by Colt Steele - Review
