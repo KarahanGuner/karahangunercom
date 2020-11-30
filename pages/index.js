@@ -24,7 +24,7 @@ export default function Home() {
           </Col>
           <Col xs={12} lg={8}>
             <div className={styles.aboutme}>
-              I am a full stack web developer from Turkey. I have experiences from building simple static websites to robust progressive web applications with client-side rendering. My favorite technologies are: React.js, Node.js, Firebase and Express. This website has been built using Next.js.
+              I am a full stack web developer from Turkey. I have experiences from building simple personal websites to robust progressive web applications with client-side rendering. My favorite technologies are: React.js, Node.js, Firebase and Express. This website has been built using Next.js.
             </div>
             <br></br>
             <div className={styles.links}>You can contact me through:    
