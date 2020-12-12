@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Home | Karahan Güner</title>
+        <title>Karahan Güner</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MyNavbar/>
