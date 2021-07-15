@@ -15,11 +15,12 @@ const BlogPage = ({titles, firsttwohundredchars, paths}) => {
     return (
         <div>
             <Head>
-                <title>Blog | Karahan Güner</title>
+                <title>Blog</title>
+                <meta name="description" content="My Blogs"/>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MyNavbar/>
-            <Container>
+            <Container fluid="md">
                 {titles.map((title, i) => (
                     <Card key={i} className={styles.card}>
                         <Card.Header as="h5">{title}</Card.Header>

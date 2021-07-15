@@ -6,6 +6,8 @@ import Head from 'next/head';
 import marked from 'marked';
 
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import MyNavbar from '../../components/mynavbar.component';
 import styles from '../../styles/Blogslug.module.css';
 
@@ -17,11 +19,17 @@ const Post = ({htmlString, data}) => {
             <meta title='description' content={data.description} />
         </Head>
         <MyNavbar/>
-        <Container className={styles.container}>
-            <div>
-                <div dangerouslySetInnerHTML={{__html: htmlString}}/>
-            </div>
-            <div className={styles.footer}>-Written on {data.date}</div>
+        <Container className={styles.container} fluid="md">
+            <Row>
+                <Col ></Col>
+                <Col lg={8}>
+                <div>
+                    <div dangerouslySetInnerHTML={{__html: htmlString}}/>
+                </div>
+                <div className={styles.footer}>-Written on {data.date}</div>
+                </Col>
+                <Col ></Col>
+            </Row>
         </Container>
         </> 
     )

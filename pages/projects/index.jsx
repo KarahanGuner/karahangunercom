@@ -15,11 +15,12 @@ const ProjectsPage = ({titles, firsttwohundredchars, paths}) => {
     return (
         <div>
             <Head>
-                <title>Projects | Karahan Güner</title>
+                <title>Projects</title>
+                <meta name="description" content="My Projects"/>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MyNavbar/>
-            <Container>
+            <Container fluid="md">
                 {titles.map((title, i) => (
                     <Card key={i} className={styles.card}>
                         <Card.Header as="h5">{title}</Card.Header>
@@ -38,7 +39,6 @@ const ProjectsPage = ({titles, firsttwohundredchars, paths}) => {
 
 export const getStaticProps = async () => { 
     const files = fs.readdirSync('projects');//gets the file names in the folder
-    const fileNames = files.map(file => file.replace('.md', ''));
     const markdownWithMetadata = files.map(file => fs.readFileSync(path.join('projects', file), 'utf8'));
     var parsedMarkdown = markdownWithMetadata.map(data => matter(data));
     //sort based on date

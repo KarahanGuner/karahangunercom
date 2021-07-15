@@ -11,11 +11,12 @@ export default function Home() {
     <div >
       <Head>
         <title>Karahan Güner</title>
+        <meta name="description" content="I am a full stack web developer from Turkey. I have experiences from building simple personal websites to robust progressive web applications with client-side rendering. My favorite technologies are: React.js, Node.js, Firebase and Express. This website has been built using Next.js."/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MyNavbar/>
       
-      <Container className={styles.container}>
+      <Container className={styles.container} fluid="md">
         <Row>
           <Col xs={12} lg={4}>
             <div className={styles.imagecontainer}>
